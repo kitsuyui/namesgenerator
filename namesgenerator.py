@@ -589,6 +589,7 @@ right = [
 
 
 def get_random_name(sep='_'):
+    # type: str -> str
     r = random.SystemRandom()
     while 1:
         name = '%s%s%s' % (r.choice(left), sep, r.choice(right))
